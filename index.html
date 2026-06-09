@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Manakamana Group of Industry Pvt. Ltd.</title>
+<title>Manakamana Group of Industry Pvt. Ltd. | Industrial Nirman Samagari Nepal</title>
 
-<meta name="description" content="Manakamana Group of Industry Pvt. Ltd. - Trusted business group in Nepal providing industrial, trading, and business solutions.">
-<meta name="keywords" content="Manakamana Group, Industry Nepal, Kathmandu Business, Nepal Industry">
+<meta name="description" content="Manakamana Group of Industry Pvt. Ltd. - Premier manufacturer and wholesale distributor of Jasta pata, Ibeam, Steel Rods, Cement, Alakatra, and Gyabin across Nepal.">
+<meta name="keywords" content="Manakamana Group, Jasta pata Nepal, Ibeam Kathmandu, Cement wholesale Bhairahawa, Alakatra Birgunj, Gyabin Bardibas, Nirman Samagari Nepal">
 <meta name="author" content="Manakamana Group of Industry Pvt. Ltd.">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -18,18 +18,33 @@
 :root{
     --primary:#1d3f91;
     --secondary:#e11d2e;
+    --dark:#1e293b;
+    --light-bg:#f8fafc;
 }
 
 body{
     font-family:'Poppins',sans-serif;
     overflow-x: hidden;
+    background-color: #fff;
+    color: var(--dark);
 }
 
-/* Translate Top Bar */
+/* Translate Top Bar Styling */
 .top-bar {
     background: #f1f3f7;
-    padding: 5px 0;
+    padding: 8px 0;
     border-bottom: 1px solid #e2e8f0;
+}
+.goog-te-gadget {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 13px !important;
+}
+.goog-te-gadget-simple {
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+    padding: 4px 8px !important;
+    border-radius: 4px !important;
+    cursor: pointer;
 }
 .goog-te-banner-frame { display: none !important; }
 body { top: 0px !important; }
@@ -38,28 +53,23 @@ body { top: 0px !important; }
     background:#fff;
     box-shadow:0 2px 15px rgba(0,0,0,.08);
 }
-
 .navbar-brand{
     font-weight:700;
     color:var(--primary);
 }
 
 .hero{
-    min-height:90vh;
-    background:linear-gradient(rgba(29,63,145,.85),rgba(29,63,145,.85)),
-    url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070') center/cover;
+    min-height:85vh;
+    background:linear-gradient(rgba(15, 23, 42, 0.8), rgba(29, 63, 145, 0.85)),
+    url('https://raw.githubusercontent.com/dineshmahatara/mkg/main/images/slides/slide1.png') center/cover;
     display:flex;
     align-items:center;
     color:#fff;
 }
-
 .hero h1{
-    font-size:3rem;
-    font-weight:700;
-}
-
-.hero p{
-    font-size:1.1rem;
+    font-size:3.2rem;
+    font-weight:800;
+    letter-spacing: -0.5px;
 }
 
 .btn-main{
@@ -67,57 +77,154 @@ body { top: 0px !important; }
     color:#fff;
     border:none;
     transition: 0.3s;
+    font-weight: 500;
 }
-
 .btn-main:hover{
     background:#c41222;
     color:#fff;
     transform: translateY(-2px);
 }
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    font-weight: 500;
+}
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+    color: white;
+}
 
 .section-title{
     font-weight:700;
     color:var(--primary);
-    margin-bottom:15px;
+    margin-bottom:10px;
+}
+.title-underline {
+    width: 70px;
+    height: 4px;
+    background: var(--secondary);
+    margin: 0 auto 25px auto;
+    border-radius: 2px;
 }
 
-.service-card{
-    border:none;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-    transition:.3s;
-    height:100%;
-    cursor: pointer;
+/* Product Card Custom Sliders */
+.product-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+    height: 100%;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px -5px rgba(0,0,0,0.1);
+    border-color: #cbd5e1;
+}
+.product-slider img {
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
 }
 
-.service-card:hover{
-    transform:translateY(-8px);
-    background: var(--primary);
-    color: #fff;
-}
-.service-card:hover .icon-box {
-    transform: scale(1.1);
-    color: #fff;
-}
-
-.icon-box{
-    font-size:50px;
-    color:var(--primary);
+/* Hub Badge styling */
+.hub-card {
+    background: #fff;
+    border: none;
+    border-top: 4px solid var(--primary);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: 6px;
     transition: 0.3s;
 }
-
-.about{
-    background:#f8f9fa;
+.hub-card:hover {
+    background: var(--primary);
+    color: white;
+}
+.hub-card:hover .text-muted {
+    color: rgba(255,255,255,0.75) !important;
 }
 
-.counter{
-    background:var(--primary);
-    color:#fff;
+/* Human Resource Management Blocks */
+.team-card {
+    border: none;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    border: 1px solid #f1f5f9;
+}
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+.team-img-wrapper {
+    height: 260px;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.team-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.role-badge {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: white;
+    padding: 3px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+.team-card:hover .role-badge {
+    background: var(--secondary);
 }
 
-.contact{
-    background:#f8f9fa;
+.team-avatar-placeholder {
+    font-size: 4rem;
 }
 
+.social-icon-link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 6px;
+    transition: 0.3s;
+    text-align: center;
+}
+.social-icon-link:hover {
+    background: var(--secondary);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.pillar-card {
+    border-left: 5px solid var(--secondary);
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    height: 100%;
+}
+
+.map-container {
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    border: 4px solid #fff;
+}
 footer{
     background:var(--primary);
     color:#fff;
@@ -129,15 +236,16 @@ footer{
 
 <div class="top-bar">
     <div class="container d-flex justify-content-end align-items-center">
-        <span class="me-2 small text-muted">Language / भाषा:</span>
+        <span class="me-2 small fw-medium text-secondary">Language / भाषा:</span>
         <div id="google_translate_element"></div>
     </div>
 </div>
 
 <nav class="navbar navbar-expand-lg sticky-top">
 <div class="container">
-<a class="navbar-brand" href="#">
-MGI
+<a class="navbar-brand d-flex align-items-center gap-2" href="#">
+    <span style="font-size: 1.5rem;">🏗️</span>
+    <span>MANAKAMANA GROUP</span>
 </a>
 
 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -145,11 +253,18 @@ MGI
 </button>
 
 <div class="collapse navbar-collapse" id="menu">
-<ul class="navbar-nav ms-auto">
+<ul class="navbar-nav ms-auto align-items-center">
 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+<li class="nav-item"><a class="nav-link" href="#distribution">Wholesale Hubs</a></li>
+<li class="nav-item"><a class="nav-link" href="#team">Our Board</a></li>
 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+<li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+    <a class="btn btn-whatsapp d-flex align-items-center gap-1 py-1 px-3" href="https://wa.me/9851069556" target="_blank">
+        💬 WhatsApp Support
+    </a>
+</li>
 </ul>
 </div>
 </div>
@@ -158,17 +273,24 @@ MGI
 <section class="hero" id="home">
 <div class="container">
 <div class="row align-items-center">
-<div class="col-lg-7" data-aos="fade-right" data-aos-duration="1200">
-<h1>MANAKAMANA GROUP OF INDUSTRY PVT. LTD.</h1>
-
-<p class="my-4">
-Delivering excellence through industrial innovation, trading, business development,
-and sustainable growth across Nepal.
+<div class="col-lg-9" data-aos="fade-right" data-aos-duration="1200">
+<span class="badge bg-danger mb-3 px-3 py-2 text-uppercase tracking-wider fw-bold">National Industrial Supply Chain</span>
+<h1>ALL NIRMAN SAMAGARI SOLUTIONS FOR NEPAL</h1>
+<p class="my-4 lead opacity-90">
+"Achieving perfection in everything we do is the aspiration and ambition of our team of heavy industrial professionals." Supplying premium structural materials down to every major development grid.
 </p>
-
-<a href="#contact" class="btn btn-main btn-lg px-4">
-Contact Us
-</a>
+<p class="text-light opacity-75 small text-uppercase fw-semibold tracking-wider mb-4 border-start border-3 border-danger ps-3">
+JASTA PATA | STRUCTURAL I-BEAM | DEFORMED STEEL REBAR RODS | HIGH-GRADE CEMENT | BITUMEN ALAKATRA | GYABIN WIRE MESH GABIONS
+</p>
+<div class="d-flex flex-wrap gap-2 align-items-center">
+    <a href="#products" class="btn btn-main btn-lg px-4">Browse Heavy Catalog</a>
+    <a href="#contact" class="btn btn-outline-light btn-lg px-4">Instant Quote</a>
+    <div class="ms-md-3 mt-2 mt-md-0">
+        <a href="https://facebook.com/#" target="_blank" class="social-icon-link">🅵</a>
+        <a href="https://twitter.com/#" target="_blank" class="social-icon-link">🆇</a>
+        <a href="https://instagram.com/#" target="_blank" class="social-icon-link">🅸</a>
+    </div>
+</div>
 </div>
 </div>
 </div>
@@ -176,92 +298,152 @@ Contact Us
 
 <section class="about py-5" id="about">
 <div class="container">
-
 <div class="text-center mb-5" data-aos="fade-up">
-<h2 class="section-title">About Us</h2>
-<p>
-Building trust, innovation, and long-term business relationships.
+<h2 class="section-title">Manakamana Group at a Glance</h2>
+<div class="title-underline"></div>
+<p class="text-muted max-w-2xl mx-auto">
+Established as a full-fledged heavy construction material supply and industrial solutions provider, building an elite execution track record across Nepal since structural inception.
 </p>
 </div>
 
-<div class="row align-items-center">
-
+<div class="row align-items-center g-4">
 <div class="col-lg-6" data-aos="fade-right">
-<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200"
-class="img-fluid rounded shadow">
+<img src="https://raw.githubusercontent.com/dineshmahatara/mkg/main/images/slides/slide1.png" class="img-fluid rounded-3 shadow" onerror="this.src='https://images.unsplash.com/photo-1590069261209-f8e9b8642343?q=80&w=1200'">
 </div>
-
 <div class="col-lg-6" data-aos="fade-left">
-<h3>Who We Are</h3>
-
+<h3 class="fw-bold text-primary mb-3">Bulk Infrastructure Capacity</h3>
 <p>
-Manakamana Group of Industry Pvt. Ltd. is a Nepal-based business organization committed to delivering quality services and industrial solutions. We focus on sustainable growth, innovation, and customer satisfaction.
+We prioritize customer confidentiality, secure operational logistics, and unmatched delivery schedules to support critical commercial and national infrastructure installations. From high-grade structural metal distributions to fundamental chemical bonding binding setups, we serve as a baseline supply partner.
 </p>
-
 <p>
-Our mission is to create value through excellence, integrity, and professionalism while contributing to Nepal's economic development.
+Our diverse market profile supplies directly to varying complex project blueprints across multiple sectors, including Government Infrastructure Projects, INGOs, NGO Rural Development Projects, and Private Enterprise Builders operating across national boundaries.
 </p>
-
-<ul class="list-group list-group-flush bg-transparent">
-<li class="list-group-item bg-transparent border-0 ps-0">✔️ Industrial Solutions</li>
-<li class="list-group-item bg-transparent border-0 ps-0">✔️ Business Development</li>
-<li class="list-group-item bg-transparent border-0 ps-0">✔️ Trading & Supply Chain</li>
-<li class="list-group-item bg-transparent border-0 ps-0">✔️ Consultancy & Project Management</li>
-</ul>
-
+<div class="row g-3 mt-2 fw-medium text-secondary">
+    <div class="col-6"> Crane Operations & Setup</div>
+    <div class="col-6">🌐 Cross-Border Customs & Trade Logistics</div>
+    <div class="col-6">🏬 Strategic Regional Network Storage</div>
+    <div class="col-6">🛡️ Certified Structural Verification Quality</div>
 </div>
-
+</div>
 </div>
 </div>
 </section>
 
-<section class="py-5" id="services">
+<section class="py-5 bg-light" id="products">
 <div class="container">
-
 <div class="text-center mb-5" data-aos="fade-up">
-<h2 class="section-title">Our Services</h2>
-<p>Professional and reliable business services.</p>
+<h2 class="section-title">Premium Structural Products</h2>
+<div class="title-underline"></div>
+<p class="text-muted">Explore our verified high-grade manufacturing and raw material catalogs. Slide to inspect variants.</p>
 </div>
 
 <div class="row g-4">
 
-<div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
-<div class="card service-card p-4 text-center">
-<div class="icon-box">🏭</div>
-<h5>Industrial Services</h5>
-<p>
-Industrial development and operational support.
-</p>
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+<div class="product-card">
+    <div id="sliderJasta" class="carousel slide product-slider" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active"><img src="https://raw.githubusercontent.com/dineshmahatara/mkg/main/images/slides/jastapata1.png" alt="Jasta Pata Dynamic View 1"></div>
+            <div class="carousel-item"><img src="https://raw.githubusercontent.com/dineshmahatara/mkg/main/images/slides/jastapata2.png" alt="Jasta Pata Dynamic View 2"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#sliderJasta" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#sliderJasta" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+    </div>
+    <div class="p-4">
+        <h5 class="fw-bold text-primary">Jasta Pata (Corrugated Sheets)</h5>
+        <p class="text-muted small">Premium galvanized and color-coated steel roofing profiles engineered to withstand harsh weather shifts and safeguard regional properties.</p>
+        <a href="#contact" class="btn btn-sm btn-outline-primary px-3">Request Bulk Specs</a>
+    </div>
 </div>
 </div>
 
-<div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
-<div class="card service-card p-4 text-center">
-<div class="icon-box">📦</div>
-<h5>Trading</h5>
-<p>
-Supply chain and product distribution solutions.
-</p>
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+<div class="product-card">
+    <div id="sliderIbeam" class="carousel slide product-slider" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active"><img src="https://raw.githubusercontent.com/dineshmahatara/mkg/main/images/slides/beam1.png" alt="Ibeam Dynamic View 1"></div>
+            <div class="carousel-item"><img src="https://raw.githubusercontent.com/dineshmahatara/mkg/main/images/slides/beam2.png" alt="Ibeam Dynamic View 2"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#sliderIbeam" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#sliderIbeam" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+    </div>
+    <div class="p-4">
+        <h5 class="fw-bold text-primary">Structural Steel I-Beams</h5>
+        <p class="text-muted small">Heavy-gauge operational structural steel columns and load-bearing profiles designed for multi-tier industrial warehouses and urban commercial frameworks.</p>
+        <a href="#contact" class="btn btn-sm btn-outline-primary px-3">Request Bulk Specs</a>
+    </div>
 </div>
 </div>
 
-<div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
-<div class="card service-card p-4 text-center">
-<div class="icon-box">📈</div>
-<h5>Business Consulting</h5>
-<p>
-Strategic planning and business growth support.
-</p>
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+<div class="product-card">
+    <div id="sliderRod" class="carousel slide product-slider" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active"><img src="https://raw.githubusercontent.com/dineshmahatara/mkg/main/images/slides/stealroad1.png" alt="Steel Rebar Dynamic View 1"></div>
+            <div class="carousel-item"><img src="https://raw.githubusercontent.com/dineshmahatara/mkg/main/images/slides/stealroad2.png" alt="Steel Rebar Dynamic View 2"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#sliderRod" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#sliderRod" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+    </div>
+    <div class="p-4">
+        <h5 class="fw-bold text-primary">Reinforcement TMT Steel Rods</h5>
+        <p class="text-muted small">High-tensile earthquake-resilient reinforcement iron bars (Rebar). Verified elongation matrices maximizing concrete hold parameters.</p>
+        <a href="#contact" class="btn btn-sm btn-outline-primary px-3">Request Bulk Specs</a>
+    </div>
 </div>
 </div>
 
-<div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
-<div class="card service-card p-4 text-center">
-<div class="icon-box">🤝</div>
-<h5>Partnership</h5>
-<p>
-Collaborative business opportunities and ventures.
-</p>
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+<div class="product-card">
+    <div id="sliderCement" class="carousel slide product-slider" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active"><img src="https://raw.githubusercontent.com/dineshmahatara/mkg/main/images/slides/cement1.png" alt="Cement Production Storage"></div>
+            <div class="carousel-item"><img src="https://raw.githubusercontent.com/dineshmahatara/mkg/main/images/slides/cement2.png" alt="Alternative Supply Batch"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#sliderCement" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#sliderCement" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+    </div>
+    <div class="p-4">
+        <h5 class="fw-bold text-primary">High-Grade OPC & PPC Cement</h5>
+        <p class="text-muted small">Premium clinker setting compounds packed for long shelf cycles. Ideal for heavy foundation piling, bridges, and commercial builds.</p>
+        <a href="#contact" class="btn btn-sm btn-outline-primary px-3">Request Bulk Specs</a>
+    </div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+<div class="product-card">
+    <div id="sliderAlakatra" class="carousel slide product-slider" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active"><img src="https://raw.githubusercontent.com/dineshmahatara/mkg/main/images/slides/Alakatra1.png" alt="Bitumen Operations View 1"></div>
+            <div class="carousel-item"><img src="https://raw.githubusercontent.com/dineshmahatara/mkg/main/images/slides/Alakatra2.png" alt="Bitumen Operations View 2"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#sliderAlakatra" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#sliderAlakatra" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+    </div>
+    <div class="p-4">
+        <h5 class="fw-bold text-primary">Alakatra (Bitumen / Asphalt)</h5>
+        <p class="text-muted small">Industrial road paving viscosity bitumen compounds designed for heavy civil highway structural operations and high-end moisture waterproofing applications.</p>
+        <a href="#contact" class="btn btn-sm btn-outline-primary px-3">Request Bulk Specs</a>
+    </div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+<div class="product-card">
+    <div id="sliderGyabin" class="carousel slide product-slider" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active"><img src="https://raw.githubusercontent.com/dineshmahatara/mkg/main/images/slides/gyabin1.png" alt="Gabion Framework View 1"></div>
+            <div class="carousel-item"><img src="https://raw.githubusercontent.com/dineshmahatara/mkg/main/images/slides/gyabin2.png" alt="Gabion Framework View 2"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#sliderGyabin" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#sliderGyabin" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+    </div>
+    <div class="p-4">
+        <h5 class="fw-bold text-primary">Gyabin (Gabion Wire Mesh)</h5>
+        <p class="text-muted small">Heavy-duty mechanically woven triple-twist hexagonal steel wire mesh boxes used for landslide stabilization, riverbank embankments, and retaining walls.</p>
+        <a href="#contact" class="btn btn-sm btn-outline-primary px-3">Request Bulk Specs</a>
+    </div>
 </div>
 </div>
 
@@ -269,114 +451,262 @@ Collaborative business opportunities and ventures.
 </div>
 </section>
 
-<section class="counter py-5">
+<section class="py-5 bg-white" id="distribution">
 <div class="container">
-<div class="row text-center">
-
-<div class="col-md-4 mb-4 mb-md-0">
-<h2 class="counter-value" data-target="100">0</h2>
-<p>Clients Served</p>
-</div>
-
-<div class="col-md-4 mb-4 mb-md-0">
-<h2 class="counter-value" data-target="50">0</h2>
-<p>Projects Completed</p>
-</div>
-
-<div class="col-md-4">
-<h2 class="counter-value" data-target="10">0</h2>
-<p>Years Experience</p>
-</div>
-
-</div>
-</div>
-</section>
-
-<section class="contact py-5" id="contact">
-<div class="container">
-
 <div class="text-center mb-5" data-aos="fade-up">
-<h2 class="section-title">Contact Us</h2>
+<h2 class="section-title">Wholesale Distribution Network</h2>
+<div class="title-underline"></div>
+<p class="text-muted">Serving local economies with immediate commercial dispatches directly from our border customs storage hubs.</p>
 </div>
 
-<div class="row">
+<div class="row g-4 text-center">
+<div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+    <div class="hub-card p-4 border-1">
+        <h3 class="fw-bold text-primary mb-1">Bhairahawa</h3>
+        <p class="text-muted small mb-0">Western Grid Supply Line</p>
+    </div>
+</div>
+<div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+    <div class="hub-card p-4 border-1">
+        <h3 class="fw-bold text-primary mb-1">Birgunj</h3>
+        <p class="text-muted small mb-0">Central Economic Cargo Hub</p>
+    </div>
+</div>
+<div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+    <div class="hub-card p-4 border-1">
+        <h3 class="fw-bold text-primary mb-1">Bardibas</h3>
+        <p class="text-muted small mb-0">Mid-Highway Distribution Point</p>
+    </div>
+</div>
+<div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+    <div class="hub-card p-4 border-1">
+        <h3 class="fw-bold text-primary mb-1">Biratnagar</h3>
+        <p class="text-muted small mb-0">Eastern Industrial Territory Center</p>
+    </div>
+</div>
+</div>
+</div>
+</section>
 
+<section class="py-5 bg-light" id="team">
+<div class="container">
+<div class="text-center mb-5" data-aos="fade-up">
+<h2 class="section-title">Our Leadership & Administration</h2>
+<div class="title-underline"></div>
+<p class="text-muted">The core management workforce driving corporate execution and distribution accuracy.</p>
+</div>
+
+<div class="row g-4 justify-content-center mb-5">
+<div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+    <div class="team-card text-center pb-4">
+        <div class="team-img-wrapper">
+            <img src="https://raw.githubusercontent.com/dineshmahatara/mkg/main/images/chairman.png" alt="Chairman Ishowri Prasad Pokharel" class="board-member-img">
+            <span class="role-badge">Chairman</span>
+        </div>
+        <h5 class="fw-bold mt-3 mb-1">Ishowri Prasad Pokharel</h5>
+        <p class="text-muted small mb-3">Chief Executive Board Governance</p>
+        <a href="tel:9851069556" class="btn btn-sm btn-main rounded-pill px-4">📞 Call 9851069556</a>
+    </div>
+</div>
+
+<div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+    <div class="team-card text-center pb-4">
+        <div class="team-img-wrapper">
+            <img src="https://raw.githubusercontent.com/dineshmahatara/mkg/main/images/md.png" alt="MD Govinda Adhikari" class="board-member-img">
+            <span class="role-badge">Managing Director</span>
+        </div>
+        <h5 class="fw-bold mt-3 mb-1">Govinda Adhikari</h5>
+        <p class="text-muted small mb-3">Operational Strategies Management</p>
+        <a href="tel:9851023655" class="btn btn-sm btn-main rounded-pill px-4">📞 Call 9851023655</a>
+    </div>
+</div>
+</div>
+
+<div class="row g-4">
+<div class="col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+    <div class="team-card text-center pb-3">
+        <div class="team-img-wrapper" style="height: 180px;">
+            <span class="team-avatar-placeholder">👤</span>
+            <span class="role-badge" style="font-size:0.65rem; padding:2px 10px;">Accountant</span>
+        </div>
+        <h6 class="fw-bold mt-3 mb-1">Kamal Thapa</h6>
+        <p class="text-muted small mb-2">Finance Department</p>
+        <a href="tel:9801080933" class="text-primary small fw-medium text-decoration-none">📱 9801080933</a>
+    </div>
+</div>
+
+<div class="col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+    <div class="team-card text-center pb-3">
+        <div class="team-img-wrapper" style="height: 180px;">
+            <span class="team-avatar-placeholder">👤</span>
+            <span class="role-badge" style="font-size:0.65rem; padding:2px 10px;">Marketing Staff</span>
+        </div>
+        <h6 class="fw-bold mt-3 mb-1">Kamal Thapa</h6>
+        <p class="text-muted small mb-2">Client Accounts Placement</p>
+        <a href="tel:9801080934" class="text-primary small fw-medium text-decoration-none">📱 9801080934</a>
+    </div>
+</div>
+
+<div class="col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+    <div class="team-card text-center pb-3">
+        <div class="team-img-wrapper" style="height: 180px;">
+            <span class="team-avatar-placeholder">👤</span>
+            <span class="role-badge" style="font-size:0.65rem; padding:2px 10px;">Corporate Staff</span>
+        </div>
+        <h6 class="fw-bold mt-3 mb-1">Santosh Kumar K.C</h6>
+        <p class="text-muted small mb-2">Operations Logistics Support</p>
+        <a href="tel:9801080932" class="text-primary small fw-medium text-decoration-none">📱 9801080932</a>
+    </div>
+</div>
+
+<div class="col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
+    <div class="team-card text-center pb-3">
+        <div class="team-img-wrapper" style="height: 180px;">
+            <span class="team-avatar-placeholder">👤</span>
+            <span class="role-badge" style="font-size:0.65rem; padding:2px 10px;">Marketing Staff</span>
+        </div>
+        <h6 class="fw-bold mt-3 mb-1">Pradip Magar</h6>
+        <p class="text-muted small mb-2">Outreach Logistics Manager</p>
+        <a href="tel:9801080931" class="text-primary small fw-medium text-decoration-none">📱 9801080931</a>
+    </div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="py-5 bg-white border-top">
+<div class="container">
+<div class="row g-4">
+<div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+    <div class="pillar-card p-4 rounded">
+        <h4 class="fw-bold text-primary mb-2">Our Vision</h4>
+        <p class="text-muted small mb-0">To lead the construction materials supply landscape across South Asia, bringing optimized cost structures to structural contractors and project execution pipelines seamlessly.</p>
+    </div>
+</div>
+<div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+    <div class="pillar-card p-4 rounded">
+        <h4 class="fw-bold text-primary mb-2">Our Mission</h4>
+        <p class="text-muted small mb-0">Deploying raw logistical infrastructure excellence, delivering certified high-yield metals, cement mixes, and gabion layers safely to national development grids.</p>
+    </div>
+</div>
+<div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+    <div class="pillar-card p-4 rounded">
+        <h4 class="fw-bold text-primary mb-2">Our Goal</h4>
+        <p class="text-muted small mb-0">Complete quality satisfaction benchmarks across every warehouse dispatch. Building secure trade structures to handle critical development layouts error-free.</p>
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="contact py-5 bg-light" id="contact">
+<div class="container">
+<div class="text-center mb-5" data-aos="fade-up">
+<h2 class="section-title">Connect with Our Corporate Office</h2>
+<div class="title-underline"></div>
+<p class="text-muted">Route your structural requirements down to our sales team directly.</p>
+</div>
+
+<div class="row g-4">
 <div class="col-lg-6" data-aos="fade-right">
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <h5>🏢 Central Headquarters</h5>
+            <p class="text-muted small">KMC-10, Buddhanagar<br>Kathmandu, Nepal</p>
+            <h5>📑 PAN Identity</h5>
+            <p class="text-muted small">610492598</p>
+        </div>
+        <div class="col-md-6">
+            <h5>📞 Central Hotlines</h5>
+            <p class="text-muted small mb-1">9851069556</p>
+            <p class="text-muted small">9801080933</p>
+            <h5>✉️ Corporate Desk Email</h5>
+            <p class="text-muted small">manakamanagroup87@gmail.com</p>
+        </div>
+    </div>
 
-<h5>Office Address</h5>
-<p>
-KMC-10, Buddhanagar<br>
-Kathmandu, Nepal
-</p>
-
-<h5>Phone</h5>
-<p>
-9858020009<br>
-9811119022
-</p>
-
-<h5>Email</h5>
-<p>
-info@manakamanagroup.com.np
-</p>
-
-<h5>PAN No.</h5>
-<p>610492598</p>
-
+    <div class="map-container rounded overflow-hidden">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.8465646197116!2d85.3283254!3d27.6911145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199708a3d5f7%3A0x886de734a413d9cf!2sBuddhanagar%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1717750000000!5m2!1sen!2snp" 
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
 </div>
 
 <div class="col-lg-6" data-aos="fade-left">
+    <form id="contactForm">
+        <div class="mb-3"><input type="text" id="formName" class="form-control" placeholder="Your Full Name / Corporate Entity" required></div>
+        <div class="mb-3"><input type="email" id="formEmail" class="form-control" placeholder="Email Address" required></div>
+        <div class="mb-3"><input type="text" id="formSubject" class="form-control" placeholder="Construction Material Focus (e.g. Bulk Cement, Jasta Pata)" required></div>
+        <div class="mb-3"><textarea id="formMessage" class="form-control" rows="4" placeholder="Detail your complete structural dimensional criteria and shipping target hub location..." required></textarea></div>
 
-<form id="contactForm">
-
-<div class="mb-3">
-<input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+            <a class="btn btn-whatsapp d-flex align-items-center gap-1 py-1 px-3" href="https://wa.me/9851069556" target="_blank">
+        💬 Message Us
+    </a>
+        <div class="alert alert-info mt-3 d-none" id="formStatus">Launching your operating system's mail layout... Finalize message by selecting send on your app device.</div>
+    </form>
 </div>
-
-<div class="mb-3">
-<input type="email" id="email" name="email" class="form-control" placeholder="Email Address" required>
-</div>
-
-<div class="mb-3">
-<input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
-</div>
-
-<div class="mb-3">
-<textarea id="message" name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
-</div>
-
-<button type="submit" id="submitBtn" class="btn btn-main w-100 py-2">
-Send Message
-</button>
-
-<div class="alert mt-3 d-none" id="formStatus"></div>
-
-</form>
-
-</div>
-
 </div>
 </div>
 </section>
 
 <footer class="py-4">
 <div class="container text-center">
-
 <h5>Manakamana Group of Industry Pvt. Ltd.</h5>
-
-<p class="mb-1">
-KMC-10, Buddhanagar, Kathmandu, Nepal
-</p>
-
-<p class="mb-0">
-© 2026 Manakamana Group of Industry Pvt. Ltd. All Rights Reserved.
-</p>
-
+<p class="mb-1 small">Corporate Office: KMC-10, Buddhanagar, Kathmandu, Nepal</p>
+<p class="mb-0 opacity-75 small">© 2026 Manakamana Group of Industry Pvt. Ltd. All Rights Reserved.</p>
 </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init({ duration: 1000, once: true });
+
+// SAFE ELEMENT FALLBACK FOR BROKEN BOARD IMAGES
+document.querySelectorAll('.board-member-img').forEach(function(img) {
+    img.addEventListener('error', function() {
+        const wrapper = this.parentElement;
+        if (wrapper) {
+            wrapper.innerHTML = '<span class="team-avatar-placeholder">👤</span>' + 
+                                '<span class="role-badge">' + (wrapper.querySelector('.role-badge')?.textContent || '') + '</span>';
+        }
+    });
+});
+
+// PURE JAVASCRIPT MAILTO GENERATOR ENGINE
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const statusAlert = document.getElementById('formStatus');
+    statusAlert.classList.remove('d-none');
+
+    const name = document.getElementById('formName').value;
+    const email = document.getElementById('formEmail').value;
+    const subject = document.getElementById('formSubject').value;
+    const message = document.getElementById('formMessage').value;
+
+    const companyEmail = "info@manakamanagroup.com.np";
+
+    const emailBody = `Website Structural Inquiry From: ${name}\n` +
+                      `Reply-To Email Access point: ${email}\n` +
+                      `=====================================\n\n` +
+                      `${message}`;
+
+    const mailtoLink = `mailto:${companyEmail}` + 
+                       `?subject=${encodeURIComponent('MGI Order Desk: ' + subject)}` + 
+                       `&body=${encodeURIComponent(emailBody)}`;
+
+    window.location.href = mailtoLink;
+
+    setTimeout(() => {
+        this.reset();
+        statusAlert.classList.add('d-none');
+    }, 5000);
+});
+</script>
 
 <script type="text/javascript">
 function googleTranslateElementInit() {
@@ -387,84 +717,7 @@ function googleTranslateElementInit() {
   }, 'google_translate_element');
 }
 </script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<script>
-// Init Scroll Animations
-AOS.init({ duration: 1000, once: true });
-
-// Numerical Statistics Counter Engine
-const counters = document.querySelectorAll('.counter-value');
-const speed = 200;
-
-const startCounters = () => {
-    counters.forEach(counter => {
-        const updateCount = () => {
-            const target = +counter.getAttribute('data-target');
-            const count = +counter.innerText;
-            const inc = target / speed;
-            if (count < target) {
-                counter.innerText = Math.ceil(count + inc);
-                setTimeout(updateCount, 15);
-            } else {
-                counter.innerText = target + "+";
-            }
-        };
-        updateCount();
-    });
-};
-
-const counterSection = document.querySelector('.counter');
-const observer = new IntersectionObserver((entries) => {
-    if(entries[0].isIntersecting) {
-        startCounters();
-        observer.disconnect();
-    }
-}, { threshold: 0.5 });
-observer.observe(counterSection);
-
-// Direct Form Submission Engine (AJAX to send_mail.php)
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const statusAlert = document.getElementById('formStatus');
-    const submitBtn = document.getElementById('submitBtn');
-    
-    submitBtn.disabled = true;
-    submitBtn.innerText = "Sending Message...";
-
-    // Package the form parameters
-    const formData = new FormData(this);
-
-    // Send asynchronous HTTP request directly to your local file
-    fetch('send_mail.php', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-        statusAlert.classList.remove('d-none', 'alert-success', 'alert-danger');
-        
-        if(data.status === 'success') {
-            statusAlert.classList.add('alert-success');
-            statusAlert.innerText = data.message;
-            this.reset(); // Clear form fields
-        } else {
-            statusAlert.classList.add('alert-danger');
-            statusAlert.innerText = data.message;
-        }
-    })
-    .catch(error => {
-        statusAlert.classList.remove('d-none', 'alert-success');
-        statusAlert.classList.add('alert-danger');
-        statusAlert.innerText = "Network connection failed. Please try again later.";
-    })
-    .finally(() => {
-        submitBtn.disabled = false;
-        submitBtn.innerText = "Send Message";
-    });
-});
-</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>
